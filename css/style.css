@@ -1,0 +1,121 @@
+:root{
+    - Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%)
+    - Pale Blue: hsl(243, 100%, 93%)
+    - Grayish Blue: hsl(229, 7%, 55%)
+    - Dark Blue: hsl(228, 56%, 26%)
+    - Very Dark Blue: hsl(229, 57%, 11%)
+}
+*{
+    margin:0;
+}
+
+html,body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color:hsl(243, 100%, 93%);
+    background-image: url('/images/bg-mobile.png');
+    background-attachment: fixed;
+}
+
+.continer{
+    display: block;
+    max-width: 1000px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.container__Fylo{
+    padding: 35px;
+    border-radius: 8px 80px 8px 8px;
+    background-color:  hsl(228, 56%, 26%);
+    margin-top: 150px;
+}
+
+.container__files{
+    display: grid;
+    grid-template-columns: 46px 46px 46px;
+    grid-template-rows: 46px;
+    grid-gap: 20px;
+    max-width: 200px;
+    
+}
+
+.container__contentIcons{ 
+    background:  hsl(229, 57%, 11%);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.progressbar{
+    background: hsl(228, 56%, 26%);
+    margin-top: 20px;
+    border-radius: 8px;
+    display: block;
+    padding: 35px 35px 80px 35px;
+}
+
+.progressbar__text{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.progressbar__content{
+    height: 18px;
+    border-radius: 10px;
+    width: 100%;
+    background: hsl(229, 57%, 11%);
+}
+
+.progressbar__progress{
+    width: 75%;
+    height: 17px;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    border-radius: 10px;
+    position: relative;
+}
+
+.progressbar__progress:after{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    content: '';
+    background: hsl(243, 100%, 93%);
+    position: absolute;
+    right: 0;
+}
+.progressbar__labelUp{
+    float: left;
+    font-weight: 700;
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+.progressbar__labelLow{
+    float: right;
+    font-weight: 700;
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+.container__info{
+    padding: 15px;
+    text-align: center;
+    background: white;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    font-weight: 700;
+    position: relative;
+    border-radius: 8px;
+    top: -35px;
+    width: 150px;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.bigText {
+    font-size: 34px;
+    margin-right: 5px;
+    color: hsl(229, 57%, 11%);
+}
