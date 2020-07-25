@@ -38,13 +38,18 @@ html,body{
     grid-template-rows: 46px;
     grid-gap: 20px;
     max-width: 200px;
-    
+    align-items: center;
+    margin-top: 25px;
 }
 
-.container__contentIcons{ 
+.container__contentIcons{
     background:  hsl(229, 57%, 11%);
     border-radius: 8px;
     text-align: center;
+    height: 100%;
+    align-items: center;
+    display: grid;
+    justify-items: center;
 }
 
 .progressbar{
@@ -70,19 +75,20 @@ html,body{
 .progressbar__progress{
     width: 75%;
     height: 17px;
-    background-image: linear-gradient(to bottom right, red, yellow);
+    background-image: linear-gradient(to left, #ff4d97, #ffa399);
     border-radius: 10px;
     position: relative;
 }
 
 .progressbar__progress:after{
-    width: 15px;
-    height: 15px;
+    width: 13px;
+    height: 13px;
     border-radius: 50%;
     content: '';
-    background: hsl(243, 100%, 93%);
+    background: white;
     position: absolute;
     right: 0;
+    top: 2px;
 }
 .progressbar__labelUp{
     float: left;
@@ -99,18 +105,18 @@ html,body{
 }
 
 .container__info{
-    padding: 15px;
     text-align: center;
     background: white;
-    width: auto;
     margin: 0 auto;
-    display: block;
+    display: grid;
     font-weight: 700;
     position: relative;
     border-radius: 8px;
     top: -35px;
-    width: 150px;
+    width: 180px;
+    height: 70px;
     text-transform: uppercase;
+    align-items: center;
     font-size: 11px;
 }
 
