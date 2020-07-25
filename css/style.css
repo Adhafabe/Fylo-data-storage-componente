@@ -1,21 +1,16 @@
-:root{
-    - Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%)
-    - Pale Blue: hsl(243, 100%, 93%)
-    - Grayish Blue: hsl(229, 7%, 55%)
-    - Dark Blue: hsl(228, 56%, 26%)
-    - Very Dark Blue: hsl(229, 57%, 11%)
-}
 *{
     margin:0;
 }
 
-html,body{
+body{
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     font-weight: 300;
     color:hsl(243, 100%, 93%);
     background-image: url('/images/bg-mobile.png');
-    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: #0c122c;
 }
 
 .continer{
@@ -57,7 +52,7 @@ html,body{
     margin-top: 20px;
     border-radius: 8px;
     display: block;
-    padding: 35px 35px 80px 35px;
+    padding: 35px 35px 10px 35px;
 }
 
 .progressbar__text{
@@ -112,7 +107,8 @@ html,body{
     font-weight: 700;
     position: relative;
     border-radius: 8px;
-    top: -35px;
+    top: 45px;
+    left: 10px;
     width: 180px;
     height: 70px;
     text-transform: uppercase;
@@ -124,4 +120,53 @@ html,body{
     font-size: 34px;
     margin-right: 5px;
     color: hsl(229, 57%, 11%);
+}
+
+@media screen and ( min-width: 768px ){
+    body{
+        background-image: url('/images/bg-desktop.png');
+        background-position: right bottom;
+    }
+
+    .continer{
+        display: grid;
+        grid-template-columns: 350px auto;
+        grid-template-rows: 1fr;
+        grid-gap: 20px;
+        align-items: center;
+        height: 100vh;
+        max-width: 925px;
+    }
+
+    .container__Fylo {
+        margin: 0;
+    }
+
+    .progressbar {
+        margin: 40px 0 0 0;
+        padding: 35px;
+        position: relative;
+    }
+
+    .container__info {
+        position: absolute;
+        top: -45px;
+        left: unset;
+        right: 37px;
+    }
+    
+    .progressbar__text {
+        text-align: left;
+    }
+
+    .container__info:after {
+        content: '';
+        position: absolute;
+        bottom: -24px;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-left: 27px solid transparent;
+        border-top: 30px solid #ffffff;
+    }
 }
